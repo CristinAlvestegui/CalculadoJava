@@ -9,11 +9,43 @@ function pega(){
 
 function soma(){
     pega();
-    num1 + num2;
-    msg = " a soma de: " + num1 + " + " + 
-    num2 + "O resultado é: ";
+    msg = " a soma de: " + num1 + " + " + num2 + "O resultado é: " + (num1+num2);
+    
 }
 
 function igual(){
     document.getElementById('Resultado').innerHTML = msg;
+}
+
+function menos(){
+    pega();
+    msg = " a subtração de: " + num1 + " - " + num2 + "O resultado é: " + (num1-num2); 
+}
+
+function divi(){
+    pega();
+    msg = " a divisão de: " + num1 + " e " + num2 + "O resultado é: " + (num1/num2); 
+}
+
+function  multi(){
+    pega();
+    if(num2 == 0){
+        msg = "Impossível divir por zero!";
+    }else{
+        msg = " a multiplicação de: " + num1 + " e " + num2 + "O resultado é: " + (num1*num2); 
+    }
+}
+
+function rais(){
+    pega();
+    if(num1 < 0){
+        msg = "Impossível calcular!";
+    }else{
+        msg = " a raiz de: " + num1 + "O resultado é: " + Math.sqrt(num1); 
+    }
+}
+
+function poten(){
+    pega();
+    
 }
