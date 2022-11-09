@@ -8,6 +8,42 @@
         <title>Calculadora</title>
         <link type="text/css" rel="stylesheet" href="../CSS/efeitos.css">
         <script type="text/javascript" src="../javascript/funcoes.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="noMeio">
+            <div>
+                <h1 id="titulos">Calculadora da Cris</h1>
+            </div>
+            <fieldset>
+                <form>
+                    <!--<input type="text" id="Numero" placeholder="0"><br><br>-->
+                    <label>Primeiro Número:</label>
+                    <input type="text" id="Numero1" placeholder="0"><br><br>
+                    <label>Segundo Número:</label>
+                    <input type="text" id="Numero2" placeholder="0"><br><br>
+                </form>
+                <textarea id="Resultado" cols="15" rows="4"></textarea>
+                <h4>Operaçãoes</h4>
+                <button onclick="soma()"><img style="width: 30px;" src="../fotos/botoes/adicionar.png"></button>
+                <button onclick="menos()" id="Menos"><img style="width: 30px;" src="../fotos/botoes/menos.png"></button>
+                <button onclick="divi()" id="Divisao"><img style="width: 30px;" src="../fotos/botoes/divisao.png"></button>
+                
+                <button onclick="multi()" id="multiplica"><img style="width: 30px;" src="../fotos/botoes/multiplica.png"></button>
+        
+                <button onclick="igual()" id="Igual"><img style="width: 30px;" src="../fotos/botoes/igual.png"></button><br>
+                <button onclick="poten()" id="potencia"><img style="width: 30px;" src="../fotos/botoes/squared.png"></button>
+                <button onclick="rais()" id="raiz"><img style="width: 30px;" src="../fotos/botoes/raiz-quadrada.png"></button>
+                <button onclick="seno()" id="Sen"><img style="width: 30px;" src="../fotos/botoes/sine.png"></button>
+                <button onclick="coseno()" id="Cos"><img style="width: 30px;" src="../fotos/botoes/cosine.png"></button>
+                <button onclick="tange()" id="Tang"><img style="width: 30px;" src="../fotos/botoes/tangent.png"></button><br>
+                <button onclick="ce()" id="CE"><img style="width: 30px;" src="../fotos/botoes/ce.png"></button>
+            </fieldset>
+        </div>
+    </body>
+</html>
     </head>
     <body>
         <div>
